@@ -7,13 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 // controller라는 annotation 이 붙으면 파일 을 return 한다
 public class TempControllerTest {
 
-    // http://localhost:8000/blog/temp/home
-    @GetMapping("/temp/home")
-    public String tempHome() {
-        System.out.println("temphome()");
-//        파일 return 기본 경로 :src/main/resources/static
-        return "/home.html";
-    }
+
 
     @GetMapping("/temp/jsp")
     public String tempJsp() {
